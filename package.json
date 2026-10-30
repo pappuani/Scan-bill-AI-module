@@ -1,0 +1,42 @@
+{
+  "name": "pos-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript E2E Test Suite for Cafe QR POS System (Product Management & Purchase Orders)",
+  "scripts": {
+    "test": "playwright test",
+    "test:ai": "playwright test tests/scan-bill-ai.spec.ts",
+    "test:po": "playwright test tests/purchase-orders.spec.ts",
+    "test:pm": "playwright test tests/product-management.spec.ts",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "pos",
+    "e2e-testing",
+    "automation",
+    "purchase-orders",
+    "product-management"
+  ],
+  "author": "pappuani <pappuani8@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pappuani/Purchase-orders.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pappuani/Purchase-orders/issues"
+  },
+  "homepage": "https://github.com/pappuani/Purchase-orders#readme"
+}
